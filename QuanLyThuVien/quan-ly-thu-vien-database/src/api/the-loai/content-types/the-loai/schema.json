@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "the_loais",
+  "info": {
+    "singularName": "the-loai",
+    "pluralName": "the-loais",
+    "displayName": "TheLoai"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "the_loai_name": {
+      "type": "string"
+    },
+    "sts": {
+      "type": "text"
+    },
+    "saches": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sach.sach",
+      "mappedBy": "the_loais"
+    }
+  }
+}

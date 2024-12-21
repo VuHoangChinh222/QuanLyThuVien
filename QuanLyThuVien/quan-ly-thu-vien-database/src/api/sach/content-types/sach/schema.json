@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saches",
+  "info": {
+    "singularName": "sach",
+    "pluralName": "saches",
+    "displayName": "Sach"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sach_name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "date_entry": {
+      "type": "date"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sts": {
+      "type": "text"
+    },
+    "tac_gias": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tac-gia.tac-gia",
+      "inversedBy": "saches"
+    },
+    "the_loais": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::the-loai.the-loai",
+      "inversedBy": "saches"
+    }
+  }
+}

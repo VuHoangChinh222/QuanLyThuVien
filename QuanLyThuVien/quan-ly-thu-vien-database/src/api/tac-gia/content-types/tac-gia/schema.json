@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tac_gias",
+  "info": {
+    "singularName": "tac-gia",
+    "pluralName": "tac-gias",
+    "displayName": "TacGia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tac_gia_name": {
+      "type": "string"
+    },
+    "sts": {
+      "type": "text"
+    },
+    "saches": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sach.sach",
+      "mappedBy": "tac_gias"
+    }
+  }
+}
