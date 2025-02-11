@@ -9,7 +9,7 @@
   + B2: Mở cmd và chạy lệnh sau: npx create-strapi@latest quan-ly-thu-vien-database (chạy cùng cấp với folder quan-ly-thu-vien)
       Video tham khảo: https://www.youtube.com/watch?v=8ZFhujEX3iU&list=PL8-VnJIzN_fWKZeXDp_wq4NgwAMgu3laq&index=4
   + B3: Vào folder quan-ly-thu-vien-database và mở cmd
-  + B4: Chạy lệnh npm run strapi import -- -f /path/to/my/file/my-strapi-export.tar.gz.enc --key quan-ly-thu-vien
+  + B4: Chạy lệnh npm run strapi import -- -f /path/to/my/file/my-strapi-export.tar.gz.enc --key quanlythuvien
   + B5: Chạy lệnh "npm run develop"
 - Link deploy: https://deploy-quan-ly-thu-vien-web.vercel.app/
   + Lưu ý: vì web được deploy free nên thời gian sử dụng chỉ được tới ngày 16/01/2025
